@@ -8,3 +8,10 @@ From YTB Corey Schafer
 "python -m venv <venv name>" -- create Virtual Environments
 "pip install -r requirements.txt" -- install all packages in txt file
 "python -m venv venv --system-site-packages" -- create Virtual Environments and install all packages in system site
+"project_env\Scripts\activate.bat" -- start venv
+"deactivate" -- stop venv
+"rmdir your-projectname /s” -- delete all
+"mkdir your-new-projectname" -- create project
+"pip freeze" -- show all packages as <packages name=packages version>
+"pip list" -- show all packages
+"where python" -- show where your python install in global region   
