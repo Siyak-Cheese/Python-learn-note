@@ -1,3 +1,10 @@
 From YTB Corey Schafer
+<How to use requests>
 "So, for example let me makes a little larger again." -- 4:08
 "content -- in bytes" "text -- in unicode" -- 4:32
+"requests.get(url)/post(url)"
+
+<How to use venv lesson>
+"python -m venv <venv name>" -- create Virtual Environments
+"pip install -r requirements.txt" -- install all packages in txt file
+"python -m venv venv --system-site-packages" -- create Virtual Environments and install all packages in system site
