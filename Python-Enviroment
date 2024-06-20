@@ -1,0 +1,90 @@
+From YTB Corey Schafer
+****How to use requests****
+> So, for example let me makes a little larger again.
+> content #in bytes text #in unicode
+> requests.get(url)/post(url)
+
+****How to use venv lesson****
+> python -m venv <venv name> 
+    # create Virtual Environments
+> pip install -r requirements.txt 
+    # install all packages in txt file
+> python -m venv venv 
+    # system-site-packages 
+    # create Virtual Environments and install all packages in system site
+> project_env\Scripts\activate.bat 
+    # start venv
+> deactivate 
+    # stop venv
+> rmdir your-projectname /s 
+    # delete all
+> mkdir your-new-projectname 
+    # create project
+> pip freeze 
+    # show all packages as <packages name=packages version>
+> pip list 
+    # show all packages
+>where python 
+    # show where your python install in global region
+
+****pip - An in-depth look at the package management system****
+> pip help install 
+    # check install details
+> pip search <package name>
+    # check package details
+> pip uninstall <package name>
+    # uninstall package
+> pip list -o 
+    # check package last version
+> pip list --outdated 
+    # check package current and last version
+> pip install -U <package name> 
+    # update package
+> pip freeze > requirements.txt
+> cat requirements.txt
+    # create a txt file to store all packages and version, cat 
+    # check the file content
+> pip freeze --local | grep -v '^\-e' | cut -d = -f -1 | xargs -n1 pip install -U 
+    #update all packages one time
+
+**** virtualenv and why you should use virtual environments ****
+> pip install virtualenv
+    # install virtualenv package
+> mkdir Environments
+    # keep all packages in a place
+> cd !$
+    # cd to the director of Environments
+> virtualenv project1_env
+    # create virtual environments name project1_env
+> Scripts\activate
+    # if on mac use bin/activate
+> deactivate
+    # shot down venv
+> virtualenv -p /usr/bin/python2.8 py28_env
+    # use python2.8 version as new venv python version
+
+****  Anaconda - Installation and Using Conda ****
+> install Anaconda https://www.anaconda.com/download/
+> conda --help
+> conda list
+> conda create --name my_app flask sqlalchemy
+    # create own project
+> Scripts\activate
+    # start env
+> deactivate
+    # close env
+> conda create --name my_project python=3.9 flask sqlalchemy
+    # use python3.9 as new project python version
+> conda env list
+> conda remove --name my_app/my_project -all
+    # remove all file
+
+**** How I Manage Multiple Projects, Virtual Environments, and Environment Variables ****
+> conda env export > environment.yaml
+    # export all package name and version into yaml file
+> cat environment.yaml
+    # look into yaml
+> conda env create -f environment.yaml
+    # create env use yaml to install packages
+> touch <file_path><file.name>
+    # create file in default file_path
