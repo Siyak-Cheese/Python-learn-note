@@ -14,4 +14,16 @@ From YTB Corey Schafer
 "mkdir your-new-projectname" -- create project
 "pip freeze" -- show all packages as <packages name=packages version>
 "pip list" -- show all packages
-"where python" -- show where your python install in global region   
+"where python" -- show where your python install in global region
+
+<pip - An in-depth look at the package management system>
+"pip help install" -- check install details
+"pip search <package name>" -- check package details
+"pip uninstall <package name>" -- uninstall package
+"pip list -o" -- check package last version
+"pip list --outdated" -- check package current and last version
+"pip install -U <package name>" -- update package
+""" pip freeze > requirements.txt
+    cat requirements.txt
+""" -- create a txt file to store all packages and version, cat -- check the file content
+"pip freeze --local | grep -v '^\-e' | cut -d = -f -1 | xargs -n1 pip install -U" -- update all packages one time
