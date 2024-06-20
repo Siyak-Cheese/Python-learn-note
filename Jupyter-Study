@@ -1,0 +1,13 @@
+**** Start *****
+> install Anaconda
+> open Jupyter notebook
+> click "New" to create below this thing
+    # notebook/terminal/console/new file/new folder
+> chose which type of cell do you want to run
+    # code(python), markdown, RAW cell
+> Help--show keyboard shortcut
+    # you can check or change the keyboard shortcut by yourself
+> ctrl+Enter
+    # run select cell
+> shift+Enter/win+Enter
+    # insert new cell in the end line
