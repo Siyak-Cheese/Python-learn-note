@@ -43,3 +43,19 @@ From YTB Corey Schafer
     # shot down venv
 > virtualenv -p /usr/bin/python2.8 py28_env
     # use python2.8 version as new venv python version
+
+****  Anaconda - Installation and Using Conda ****
+> install Anaconda https://www.anaconda.com/download/
+> conda --help
+> conda list
+> conda create --name my_app flask sqlalchemy
+    # create own project
+> Scripts\activate
+    # start env
+> deactivate
+    # close env
+> conda create --name my_project python=3.9 flask sqlalchemy
+    # use python3.9 as new project python version
+> conda env list
+> conda remove --name my_app/my_project -all
+    # remove all file
