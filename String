@@ -11,8 +11,22 @@
     # :,.2f -- separate by ',' comma and two decimal places.
 > tdate = datetime.datetime.today()
     # print datetime now
-    # f"{tdate:%B %d, %Y}" -- Format datetime to Jun 24, 2024 -- %B is month, %d is date，%Y is year.
+    # f"{tdate:%B %d, %Y}" 
+        -- Month d, yyyy
+        -- Format datetime to Jun 24, 2024 -- %B is month, %d is date，%Y is year.
     # %A %j -- A is week of the date, j is day of the year.
     # https://docs.python.org/zh-cn/3/library/datetime.html
 
 **** F-Strings - How to Use Them and Advanced String Formatting ****
+> f"{string.<string functions>}"
+    # using functions of string.
+> f"{ +/-/*/%}"
+    # arithmetic operation.
+> f"{n:02}"
+    # Fill with zeros for a total of two digits, default fill left of number.
+> f"{n:0^2}/{n:0<2}/{n:0>2}"
+    # Fill with zeros for a total of two digits, '^' mediate, '<' right of number, '>' left of number.
+> f"{date:%b %d, %y}"
+    # -- Mth d, yy
+    # '%b' is month abbreviation, '%y' is two-digit year, omitting the century ordinal expression.
+    # https://www.ibm.com/docs/zh/cmofi/7.5.0?topic=reference-date-time-formats
