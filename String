@@ -14,3 +14,5 @@
     # f"{tdate:%B %d, %Y}" -- Format datetime to Jun 24, 2024 -- %B is month, %d is date，%Y is year.
     # %A %j -- A is week of the date, j is day of the year.
     # https://docs.python.org/zh-cn/3/library/datetime.html
+
+**** F-Strings - How to Use Them and Advanced String Formatting ****
