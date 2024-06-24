@@ -1,4 +1,16 @@
 **** Slicing Lists and Strings ****
 > list[star:end:step]
 > string[star:end:step]
+
 **** String Formatting - Advanced Operations for Dicts, Lists, Numbers, and Dates ****
+> sample = f'{ame}, {age}'
+> sample_1 = f'{:.2f}'
+    # :.2f -- Format floating point number to string with two decimal places. The number '2' you can change.
+> sample_2 = f'{:,}'
+    # :, -- separate by ',' comma.
+    # :,.2f -- separate by ',' comma and two decimal places.
+> tdate = datetime.datetime.today()
+    # print datetime now
+    # f"{tdate:%B %d, %Y}" -- Format datetime to Jun 24, 2024 -- %B is month, %d is date，%Y is year.
+    # %A %j -- A is week of the date, j is day of the year.
+    # https://docs.python.org/zh-cn/3/library/datetime.html
