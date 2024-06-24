@@ -1,0 +1,4 @@
+**** Slicing Lists and Strings ****
+> list[star:end:step]
+> string[star:end:step]
+**** String Formatting - Advanced Operations for Dicts, Lists, Numbers, and Dates ****
