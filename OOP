@@ -1,0 +1,14 @@
+**** Tutorial 1: Classes and Instances ****
+> class Example:
+> __init__(self,)
+    # Initializes the parameters and instances of the class.
+    # self is instance equal to variable.
+    # var_1 = Example()
+    # var_1 is self.
+> def method(self):
+    # self is instance of method.
+> Example.method(self=variable)
+    # assgin variable as self(instance)
+    # let calss method know what does instance.
+> exma_1.method()
+    # exma_1 = self in method.
