@@ -12,3 +12,9 @@
     # let calss method know what does instance.
 > exma_1.method()
     # exma_1 = self in method.
+
+**** Tutorial 2: Classes Variables ****
+> Share class variable in all instances of class.
+> __dict__: namespace
+> self.
+> class.
