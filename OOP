@@ -18,3 +18,9 @@
 > __dict__: namespace
 > self.
 > class.
+
+**** Tutorial 3: classmethods and staticmethods ****
+> @classmethod
+> @staticmethod
+
+**** Decorators - Dynamically Alter The Functionality Of Your Functions ****
