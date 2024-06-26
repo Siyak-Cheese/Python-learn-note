@@ -28,6 +28,8 @@
 **** Closures - How to Use Them and Why They Are Useful ****
 > function is object pass to variable.
 > variable could be a method.
+> recap: Closures allow us to take advantage of first-class functions and return an
+            inner function that remember and has access to variables local to the scope in which they were created. 
 
 **** First-Class Functions ****
 >>> def First_func(x):
@@ -44,3 +46,7 @@
     msg_p = First_func('p')
     msg_p('Test Paragraph!')
 >>>
+> recap: First function allow us to treat functions like any other object.
+    # Tips: We can pass functions as arguments to another functions.
+            We can return functions.
+            We can assign functions to Variables.
