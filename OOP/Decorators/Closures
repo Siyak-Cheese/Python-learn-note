@@ -1,4 +1,4 @@
-**** Tutorial 1: Classes and Instances ****
+************ Tutorial 1: Classes and Instances ************
 > class Example:
 > __init__(self,)
     # Initializes the parameters and instances of the class.
@@ -13,17 +13,17 @@
 > exma_1.method()
     # exma_1 = self in method.
 
-**** Tutorial 2: Classes Variables ****
+************ Tutorial 2: Classes Variables ************
 > Share class variable in all instances of class.
 > __dict__: namespace
 > self.
 > class.
 
-**** Tutorial 3: classmethods and staticmethods ****
+************ Tutorial 3: classmethods and staticmethods ************
 > @classmethod
 > @staticmethod
 
-**** Decorators - Dynamically Alter The Functionality Of Your Functions ****
+************ Decorators - Dynamically Alter The Functionality Of Your Functions ************
 >Allow us to maintainer alter functionality in one localtion and easily apply it anywhere that we want to codebase.
 >>> Tips:
 def outer_func(origin_func): # take function argument(origin_func) pass to other function(outer_func)
@@ -38,13 +38,13 @@ def origin_func(name, age):
 # origin_func = outer_func(origin_func)
 origin_func('Test', 25) --> print: My name is Test, I'm 25 years old.
 
-**** Closures - How to Use Them and Why They Are Useful ****
+************ Closures - How to Use Them and Why They Are Useful ************
 > function is object pass to variable.
 > variable could be a method.
 > recap: Closures allow us to take advantage of first-class functions and return an
             inner function that remember and has access to variables local to the scope in which they were created. 
 
-**** First-Class Functions ****
+************ First-Class Functions ************
 >>> def First_func(x):
 
         def Second_func(y):
@@ -63,3 +63,18 @@ origin_func('Test', 25) --> print: My name is Test, I'm 25 years old.
     # Tips: We can pass functions as arguments to another functions.
             We can return functions.
             We can assign functions to Variables.
+
+************ Decorators With Arguments ************
+> prefix_decorator ran before inner_func and can pass msg in inner_func row head.
+Tips:
+def prefix_decorator(prefix):
+    def outer_func(origin_func):
+        def inner_func(*args, **kwargs):
+            print(prefix, f"Ran it before {origin_func.__name__}")
+            return origin_func(*args, **kwargs)
+        return inner_func
+    return outer_func
+
+@prefix_decorator("Head msg:")
+def origin_func(name, age):
+    print(f"My name is {name}, I'm {age} years old.")
