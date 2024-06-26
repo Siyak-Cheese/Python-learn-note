@@ -24,6 +24,7 @@
 > @staticmethod
 
 **** Decorators - Dynamically Alter The Functionality Of Your Functions ****
+>Allow us to maintainer alter functionality in one localtion and easily apply it anywhere that we want to codebase.
 
 **** Closures - How to Use Them and Why They Are Useful ****
 > function is object pass to variable.
