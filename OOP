@@ -25,6 +25,18 @@
 
 **** Decorators - Dynamically Alter The Functionality Of Your Functions ****
 >Allow us to maintainer alter functionality in one localtion and easily apply it anywhere that we want to codebase.
+>>> Tips:
+def outer_func(origin_func): # take function argument(origin_func) pass to other function(outer_func)
+    def inner_func(*args, **kwargs):
+        return origin_func(*args, **kwargs)
+    return inner_func
+
+@outer_func # This statment is euqual to origin_func = outer_func(origin_func)
+def origin_func(name, age):
+    print(f"My name is {name}, I'm {age} years old.")
+
+# origin_func = outer_func(origin_func)
+origin_func('Test', 25) --> print: My name is Test, I'm 25 years old.
 
 **** Closures - How to Use Them and Why They Are Useful ****
 > function is object pass to variable.
