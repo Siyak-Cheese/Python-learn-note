@@ -26,7 +26,8 @@
 **** Decorators - Dynamically Alter The Functionality Of Your Functions ****
 
 **** Closures - How to Use Them and Why They Are Useful ****
-
+> function is object pass to variable.
+> variable could be a method.
 
 **** First-Class Functions ****
 >>> def First_func(x):
