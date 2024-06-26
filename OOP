@@ -24,3 +24,22 @@
 > @staticmethod
 
 **** Decorators - Dynamically Alter The Functionality Of Your Functions ****
+
+**** Closures - How to Use Them and Why They Are Useful ****
+
+
+**** First-Class Functions ****
+>>> def First_func(x):
+
+        def Second_func(y):
+            print(f"<{x}><{y}><{x}>")
+
+        return Second_func
+    
+    msg_h1 = First_func('h1') # msg is equal to Second_func(function). 'h1' pass to x.
+    msg_h1('Test headline') # 'Test sencond function' pass to y.
+    msg_h1('Test other headline') # 'Test other headline' pass to y.
+
+    msg_p = First_func('p')
+    msg_p('Test Paragraph!')
+>>>
