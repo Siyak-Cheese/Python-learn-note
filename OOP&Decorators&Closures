@@ -23,6 +23,8 @@
 > @classmethod
 > @staticmethod
 
+************ Tutorial 4: Inheritance - Creating Subclasses ************
+
 ************ Decorators - Dynamically Alter The Functionality Of Your Functions ************
 >Allow us to maintainer alter functionality in one localtion and easily apply it anywhere that we want to codebase.
 >>> Tips:
