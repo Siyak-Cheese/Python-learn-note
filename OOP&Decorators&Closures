@@ -21,9 +21,11 @@
 
 ************ Tutorial 3: classmethods and staticmethods ************
 >>>
+class Class_name:
+    class_variable = 1
 @classmethod
 def class_method(cls, *args):
-
+    cls.class_variable = args
 > @staticmethod
 
 ************ Tutorial 4: Inheritance - Creating Subclasses ************
