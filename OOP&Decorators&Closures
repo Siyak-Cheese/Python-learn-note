@@ -20,7 +20,10 @@
 > class.
 
 ************ Tutorial 3: classmethods and staticmethods ************
-> @classmethod
+>>>
+@classmethod
+def class_method(cls, *args):
+
 > @staticmethod
 
 ************ Tutorial 4: Inheritance - Creating Subclasses ************
