@@ -20,14 +20,26 @@
 > class.
 
 ************ Tutorial 3: classmethods and staticmethods ************
+@classmethod
 >>>
 class Class_name:
     class_variable = 1
 @classmethod
 def class_method(cls, *args):
     cls.class_variable = args
-> @staticmethod
+>>>
+> use classmethod as alternative constructors;
+> use classmethod in order to provide multiples ways of creating our objects;
 
+@staticmethod
+> static method don't take the instance or the class as the first argument, so just pass in the arguments that
+    we want to work with;
+> Don't operate on the instance or the class
+
+Summary:
+> work with classes regular methods automatically pass the instance as the first argument and we call that "self";
+> class methods automatically pass the class as the first argument and we call that "cls";
+> static methods don't pass anything automatically they don't pass the instance or the class so really they behave just like regular funcitons except we include them in our classes because they has some logical connection with the class.
 ************ Tutorial 4: Inheritance - Creating Subclasses ************
 
 ************ Decorators - Dynamically Alter The Functionality Of Your Functions ************
