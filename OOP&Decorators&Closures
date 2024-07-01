@@ -40,12 +40,21 @@ Summary:
 > work with classes regular methods automatically pass the instance as the first argument and we call that "self";
 > class methods automatically pass the class as the first argument and we call that "cls";
 > static methods don't pass anything automatically they don't pass the instance or the class so really they behave just like regular funcitons except we include them in our classes because they has some logical connection with the class.
+
 ************ Tutorial 4: Inheritance - Creating Subclasses ************
 > subclass could rewrite class attribute and didn't change original attribute in class. Only reference subclass the rewrite attribute will vaild.
 > isinstance()
     # tell us if an object is an instance of a class.
 > issubclass()
     # tell us if a class is a subclass of another.
+
+************ Tutorial 5: Special (Magic/Dunder) Methods ************
+
+************ str() vs repr() ************
+> The goal of __repr__ is to be unambiguous.
+    # developers use repr to debug code because it will return the statment.
+> The goal of __str__ is to be readable.
+    # users more like str than repr because it will return result of statment.
 
 ************ Decorators - Dynamically Alter The Functionality Of Your Functions ************
 >Allow us to maintainer alter functionality in one localtion and easily apply it anywhere that we want to codebase.
