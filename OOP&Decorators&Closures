@@ -56,6 +56,21 @@ Summary:
 > __len__
     # Construct functions in your own class that can be used directly.
 
+************ Tutorial 6: Property Decorators - Getters, Setters, and Deleters ************
+>>> @property
+    def func_1(slef):
+    # Change the method of class to the attribute of class.
+    # Call attribute instead of method.
+>>> @func_1.setter
+    def func_1(self, *args):
+    # setter : modify the value of attribute
+
+    @func_1.deleter
+    def func_1(self):
+        self.name = None
+    # deleter : delete the value of attribute
+
+    del emp.func_1
 
 ************ str() vs repr() ************
 > The goal of __repr__ is to be unambiguous.
