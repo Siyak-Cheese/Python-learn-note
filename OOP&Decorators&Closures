@@ -49,6 +49,13 @@ Summary:
     # tell us if a class is a subclass of another.
 
 ************ Tutorial 5: Special (Magic/Dunder) Methods ************
+> __repr__
+> __str__
+> __init__
+> __add__
+> __len__
+    # Construct functions in your own class that can be used directly.
+
 
 ************ str() vs repr() ************
 > The goal of __repr__ is to be unambiguous.
