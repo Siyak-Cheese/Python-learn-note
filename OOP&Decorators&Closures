@@ -133,3 +133,7 @@ def prefix_decorator(prefix):
 @prefix_decorator("Head msg:")
 def origin_func(name, age):
     print(f"My name is {name}, I'm {age} years old.")
+
+************ if __name__ == '__main__' ************
+> if __name__ == '__main__'
+    # Is this file being run directly by Python or is it being imported.
