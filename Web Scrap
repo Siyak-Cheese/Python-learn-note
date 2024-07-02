@@ -1,0 +1,16 @@
+1. requirement: beautifulsoup4, requests, lxml, html5lib
+2. A html file
+3. application construct
+    3.1 open the "html" file by "with open" statement;
+        > Beautifulsoup.prettify()
+            # format file more clealy see which tags are nested within each other.
+        > Beautifulsoup.title 
+            # find the first title of the html file.
+        > Beautifulsoup.find(element, argument)
+            # find specify element by argument.
+        > Beautifulsoup.find_all(element, argument)
+            # find all elements by argument and return a list.
+        > headline = article.h2.a.text
+            # will return the headline text.
+    3.2 get html source code
+        > requests.get("url").text
