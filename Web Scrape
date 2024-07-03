@@ -1,7 +1,9 @@
 1. requirement: beautifulsoup4, requests, lxml, html5lib
 2. A html file
 3. application construct
-    3.1 open the "html" file by "with open" statement;
+    3.1 get html source code
+        > requests.get("url").text
+    3.2 open the "html" file by "with open" statement;
         > Beautifulsoup.prettify()
             # format file more clealy see which tags are nested within each other.
         > Beautifulsoup.title 
@@ -12,5 +14,13 @@
             # find all elements by argument and return a list.
         > headline = article.h2.a.text
             # will return the headline text.
-    3.2 get html source code
-        > requests.get("url").text
+        > video_src = article.find()[something]
+            # use [] find target value like a dict.
+    3.3 open csv file to save the output data
+        > import csv
+        > csv_file = open(csv_file_name.csv, 'w')
+            # w -- write into csv_file_name.csv
+        > csv_writer = csv.writer(csv_file)
+        > csv_writer.writerow(['headline', 'summary', 'video_link'])
+        > csv_writer.writerow([headline, summary, video_link])
+        > csv_file.close()
