@@ -10,6 +10,7 @@
             # find the first title of the html file.
         > Beautifulsoup.find(element, argument)
             # find specify element by argument.
+            # if argument is python's key word like 'class', need add underline behind the class e.g.'class_'.
         > Beautifulsoup.find_all(element, argument)
             # find all elements by argument and return a list.
         > headline = article.h2.a.text
