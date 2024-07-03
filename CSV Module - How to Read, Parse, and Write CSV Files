@@ -1,0 +1,25 @@
+> csv.reader(file_name)
+    # return list
+> csv.writer(new_file)
+    # write into new_file(if not exist will create, else rewrite
+    exist file)
+> csv.reader(file_name, delimiter = '-')
+    # read file and use '-' split
+> csv.writer(new_file, delimiter = '\t')
+    # write into new_file and split by '\t'
+> csv.DictReader(file_name_1)
+    # return as dict into list
+>>>
+fieldnames = ['column_name_1', 'column_name_2']
+    # define dict key
+csv.DictWriter(new_file_1, fieldnames=fieldnames, delimiter='\t')
+    # write into file as dict and use fieldnames as key then 
+    split by '\t'
+csv.writeheader()
+    # tell python create a table header in the new file
+------------------- This is boundary -------------------
+> fieldnames = ['column_name_1']
+> del line['column_name_2']
+    # will delete 'column_name_2' key in the new_file_1
+>>>
+> Use DictReader/DictWriter better than reader/writer in easy to manipulate display fields.
