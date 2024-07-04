@@ -3,6 +3,7 @@
 3. application construct
     3.1 get html source code
         > requests.get("url").text
+        > then use lxml "Beautifulsoup(html, 'lxml')" parse html file
     3.2 open the "html" file by "with open" statement;
         > Beautifulsoup.prettify()
             # format file more clealy see which tags are nested within each other.
